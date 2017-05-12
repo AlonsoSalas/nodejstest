@@ -1,0 +1,32 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "Node socket test app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --exec babel-node"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "nodemon": "^1.11.0"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "socket"
+  ],
+  "author": "AA",
+  "license": "ISC"
+}

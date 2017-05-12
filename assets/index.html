@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+
+      <title>nodetest</title>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <script src="js/jquery/dist/jquery.min.js"></script>
+      <script src="js/moment/moment.js"></script>
+      <script src="js/socket.io-client/dist/socket.io.js"></script>
+
+   </head>
+
+   <body>
+
+      <div class="container">
+         <div class="jumbotron text-center">
+            <h1>Node Socket  <span class="label label-info"></span></h1>
+         </div>
+
+         <div id="principal"></div>
+      </div>
+
+      <script>
+         if (sessionStorage.getItem('user')) {
+            $("#principal").load("/main.html");
+         } else {
+            $("#principal").load("/login.html");
+         }
+      </script>
+   </body>
+
+</html>
